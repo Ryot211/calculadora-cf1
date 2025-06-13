@@ -18,9 +18,9 @@ jobs:
       run : dotnet restore
 
     - name: Compilar
-      run: dotnet bulid --no-restore
+      run: dotnet build --no-restore
   crear-pdf:
-     runs-on: ubuntu latest
+     runs-on: ubuntu-latest
      steps:
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
